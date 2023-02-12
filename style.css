@@ -1,0 +1,46 @@
+* {
+    font-family: Fira Code;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+body {
+    background-color: #ccc;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.context-menu {
+    width: 200px;
+    position: absolute;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 8px 8px 25px 5px #333;
+    display: none;
+}
+
+.context-menu-item {
+    transition: all ease 0.3s;
+    width: 90%;
+    cursor: pointer;
+    padding: 12px 15px;
+}
+
+.context-menu-item i {
+    margin-right: 5px;
+}
+
+.context-menu-item:last-of-type {
+    border-top: 1px solid #c1c1c1;
+}
+
+.context-menu-item:hover {
+    background-color: #fff;
+}
